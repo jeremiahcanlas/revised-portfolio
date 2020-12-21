@@ -4,7 +4,7 @@ function Footer() {
     return (
         <footer>
             <div className='mx-3'>
-                <p>2020 &copy; Jeremiah Canlas</p>
+                <p>&copy; Copyright 2020 Jeremiah Canlas</p>
             </div>
         </footer>
     )

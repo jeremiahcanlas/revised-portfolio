@@ -61,4 +61,11 @@
 
 footer {
     margin-top: auto; //this keeps the footer at the bottom
+    background-color: #0C120C;
+
+    p{
+        margin: 0.5rem 0;
+        color: $main-color;
+        font-weight: 500;
+    }
 }

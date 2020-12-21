@@ -43,4 +43,10 @@
 
 footer {
   margin-top: auto;
+  background-color: #0C120C;
+}
+footer p {
+  margin: 0.5rem 0;
+  color: #C7D6D5;
+  font-weight: 500;
 }
