@@ -1,5 +1,6 @@
 import React from 'react'
-import Modal from './modal'
+
+import {Navbar, Nav} from 'react-bootstrap'
 
 
 
@@ -15,23 +16,15 @@ function Navigation() {
 
   
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div className="container-fluid">
-                <button className="navbar-toggler navBtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-list" aria-controls="navbar-list" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse navlist" id="navbar-list">
-                    <ul className="navbar-nav ">
-                        <li className="nav-item">
-                            <a className="nav-link" onClick={hideNav}  href="#">Projects</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" onClick={hideNav}  href="#">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <Navbar bg='dark' expand='lg' variant='dark'>
+           <Navbar.Toggle aria-controls='basic-navbar-nav'/>
+           <Navbar.Collapse id='basic-navbar-nav' className='navlist'>
+                <Nav className='mr-auto' >
+                        <Nav.Link onClick={hideNav} href='#'>Projects</Nav.Link>
+                        <Nav.Link onClick={hideNav} href='#'>Contact</Nav.Link>
+                </Nav>
+           </Navbar.Collapse>
+        </Navbar>
     )
 }
 

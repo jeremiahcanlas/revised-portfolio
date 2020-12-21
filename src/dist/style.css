@@ -1,6 +1,9 @@
 .navbar {
   background-color: #0C120C !important;
 }
+.navbar button {
+  margin-left: 1rem;
+}
 .navbar .navbar-toggler:focus,
 .navbar .navbar-toggler:active,
 .navbar .navbar-toggler-icon:focus {
@@ -13,16 +16,14 @@
 .navbar .navlist .navbar-nav {
   flex-direction: row;
 }
-.navbar .navlist .navbar-nav li {
-  margin: 0.5rem 0.5rem;
-}
-.navbar .navlist .navbar-nav li a {
-  color: #C7D6D5;
+.navbar .navlist .navbar-nav a {
+  color: #C7D6D5 !important;
   font-weight: 500;
   font-size: 1rem;
+  margin: 0.5rem 0.5rem;
 }
-.navbar .navlist .navbar-nav li a:hover {
-  color: #FFB20F;
+.navbar .navlist .navbar-nav a:hover {
+  color: #FFB20F !important;
 }
 
 .intro {

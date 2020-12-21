@@ -5,6 +5,10 @@
 .navbar {
     background-color: $nav-color!important;
 
+    button {
+        margin-left:1rem;
+    }
+
     .navbar-toggler:focus,
     .navbar-toggler:active,
     .navbar-toggler-icon:focus {
@@ -20,19 +24,18 @@
 
             flex-direction: row;
 
-            li {
-               margin: 0.5rem 0.5rem;
 
-               a {
-                   color: $main-color;
+            a {
+                   color: $main-color!important;
                    font-weight: 500;
                    font-size: 1rem;
-               }
-
-               a:hover {
-                   color:$yellow;
-               }
+                   margin: 0.5rem 0.5rem;
             }
+
+            a:hover {
+                   color:$yellow!important;
+            }
+            
         }
     }
 
