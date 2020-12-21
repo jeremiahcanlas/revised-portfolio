@@ -1,6 +1,12 @@
 .navbar {
   background-color: #0C120C !important;
 }
+.navbar .navbar-toggler:focus,
+.navbar .navbar-toggler:active,
+.navbar .navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
 .navbar .navlist {
   justify-content: flex-end;
 }
@@ -10,10 +16,29 @@
 .navbar .navlist .navbar-nav li {
   margin: 0.5rem 0.5rem;
 }
+.navbar .navlist .navbar-nav li a {
+  color: #C7D6D5;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.navbar .navlist .navbar-nav li a:hover {
+  color: #FFB20F;
+}
 
 .intro {
   text-align: center;
   background-color: #C7D6D5;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+.intro h1 {
+  font-size: 2rem;
+}
+.intro p {
+  font-weight: 500;
+  color: #0C120C;
 }
 
 footer {

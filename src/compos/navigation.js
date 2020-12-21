@@ -1,12 +1,16 @@
 import React from 'react'
 
-const hideNav = () => {
-    const element =  document.querySelector('.navlist')
-    element.classList.remove('show')
-}
+
 
 
 function Navigation() {
+    
+
+    const hideNav = () => {
+        const element =  document.querySelector('.navlist')
+        element.classList.remove('show')
+    }
+
 
   
     return (
@@ -18,10 +22,10 @@ function Navigation() {
                 <div className="collapse navbar-collapse navlist" id="navbar-list">
                     <ul className="navbar-nav ">
                         <li className="nav-item">
-                            <a className="nav-link" onClick={hideNav} href="#">Projects</a>
+                            <a className="nav-link" onClick={hideNav}  href="#">Projects</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" onClick={hideNav} href="#">Contact</a>
+                            <a className="nav-link" onClick={hideNav}  href="#">Contact</a>
                         </li>
                     </ul>
                 </div>

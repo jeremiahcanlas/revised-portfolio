@@ -1,19 +1,37 @@
   $main-color:#C7D6D5;
   $nav-color: #0C120C;
+  $yellow: #FFB20F;
 
 .navbar {
     background-color: $nav-color!important;
 
+    .navbar-toggler:focus,
+    .navbar-toggler:active,
+    .navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    }
 
     .navlist {
         
         justify-content: flex-end;
 
         .navbar-nav {
+
             flex-direction: row;
 
             li {
                margin: 0.5rem 0.5rem;
+
+               a {
+                   color: $main-color;
+                   font-weight: 500;
+                   font-size: 1rem;
+               }
+
+               a:hover {
+                   color:$yellow;
+               }
             }
         }
     }
@@ -25,6 +43,20 @@
 .intro {
     text-align: center;
     background-color: $main-color;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+
+    h1{
+        font-size: 2rem;
+    }
+
+    p{
+        font-weight: 500;
+        color: $nav-color;
+    }
+
 }
 
 footer {
