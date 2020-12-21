@@ -1,0 +1,32 @@
+  $main-color:#C7D6D5;
+  $nav-color: #0C120C;
+
+.navbar {
+    background-color: $nav-color!important;
+
+
+    .navlist {
+        
+        justify-content: flex-end;
+
+        .navbar-nav {
+            flex-direction: row;
+
+            li {
+               margin: 0.5rem 0.5rem;
+            }
+        }
+    }
+
+}
+
+
+
+.intro {
+    text-align: center;
+    background-color: $main-color;
+}
+
+footer {
+    margin-top: auto; //this keeps the footer at the bottom
+}

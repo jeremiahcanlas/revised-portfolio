@@ -1,0 +1,21 @@
+.navbar {
+  background-color: #0C120C !important;
+}
+.navbar .navlist {
+  justify-content: flex-end;
+}
+.navbar .navlist .navbar-nav {
+  flex-direction: row;
+}
+.navbar .navlist .navbar-nav li {
+  margin: 0.5rem 0.5rem;
+}
+
+.intro {
+  text-align: center;
+  background-color: #C7D6D5;
+}
+
+footer {
+  margin-top: auto;
+}
