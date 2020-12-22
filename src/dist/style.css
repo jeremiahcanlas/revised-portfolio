@@ -1,8 +1,19 @@
 .navbar {
   background-color: #0C120C !important;
+  padding-bottom: 0.9rem;
+}
+@media (min-width: 688px) {
+  .navbar {
+    padding-bottom: 0.5rem;
+  }
 }
 .navbar button {
   margin-left: 1rem;
+}
+.navbar button svg {
+  color: #FFB20F;
+  width: 30px !important;
+  height: 30px !important;
 }
 .navbar .navbar-toggler:focus,
 .navbar .navbar-toggler:active,
@@ -14,6 +25,7 @@
   justify-content: flex-end;
 }
 .navbar .navlist .navbar-nav {
+  margin-left: 1rem;
   flex-direction: row;
 }
 .navbar .navlist .navbar-nav a {
@@ -24,6 +36,19 @@
 }
 .navbar .navlist .navbar-nav a:hover {
   color: #FFB20F !important;
+}
+.navbar .modalBtn {
+  color: #FFB20F !important;
+  margin-right: 1rem;
+  padding: 4px 12px;
+  background-color: #0C120C !important;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.navbar .modalBtn svg {
+  width: 30px !important;
+  height: 30px !important;
 }
 
 .intro {
