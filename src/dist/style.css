@@ -38,17 +38,89 @@
   color: #FFB20F !important;
 }
 .navbar .modalBtn {
-  color: #FFB20F !important;
   margin-right: 1rem;
-  padding: 4px 12px;
+  padding: 0;
   background-color: #0C120C !important;
   border: none;
+}
+.navbar .modalBtn svg {
+  color: #C7D6D5;
+}
+.navbar .modalBtn:hover svg {
+  color: #FFB20F !important;
+}
+.navbar .modalBtn:active, .navbar .modalBtn:focus {
   outline: none;
   box-shadow: none;
 }
-.navbar .modalBtn svg {
-  width: 30px !important;
-  height: 30px !important;
+
+.modal .modal-header {
+  justify-content: center !important;
+  border: none;
+  background-color: #0C120C;
+}
+.modal .modal-header .modal-title {
+  font-size: 1.2rem;
+  color: #C7D6D5;
+}
+@media (min-width: 688px) {
+  .modal .modal-header .modal-title {
+    font-size: 1.5rem;
+  }
+}
+.modal .modal-header svg {
+  margin-left: 0.8rem;
+  color: #FFB20F;
+  font-size: 2rem;
+}
+.modal .modal-body {
+  text-align: center;
+  background-color: #0C120C;
+  color: #C7D6D5;
+  padding-bottom: 0;
+}
+.modal .modal-body .modalLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0 4rem;
+}
+.modal .modal-body .modalLinks .modal-link a {
+  background-color: #0C120C;
+  border: none;
+}
+.modal .modal-body .modalLinks .modal-link a svg {
+  font-size: 2.3rem;
+  color: #C7D6D5;
+}
+.modal .modal-body .modalLinks .modal-link a svg:hover {
+  color: #FFB20F;
+}
+.modal .modal-body .modalLinks .modal-link a:focus, .modal .modal-body .modalLinks .modal-link a:active {
+  outline: none;
+  box-shadow: none;
+}
+.modal .modal-body .modalLinks .modal-link p {
+  color: #FFB20F;
+  font-weight: 500;
+}
+.modal .modal-footer {
+  padding: 0.2rem;
+  border: none;
+  background-color: #0C120C;
+}
+.modal .modal-footer button {
+  background-color: #C7D6D5;
+  color: #0C120C;
+  font-weight: 500;
+}
+.modal .modal-footer button:hover {
+  background-color: #0C120C;
+  color: #C7D6D5;
+  border: 1px solid #FFB20F;
+}
+.modal .modal-footer button:hover svg {
+  color: #FFB20F;
 }
 
 .intro {

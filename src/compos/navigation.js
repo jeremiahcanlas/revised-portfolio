@@ -30,7 +30,6 @@ function Navigation() {
             </Navbar.Toggle>
             <Modalcomponent expanded={expanded}/>
            <Navbar.Collapse id='basic-navbar-nav' className='navlist'>
-
                 <Nav className='mr-auto' >
                     <Nav.Link onClick={hideNav}  href='#'>
                         Projects
@@ -40,7 +39,6 @@ function Navigation() {
                     </Nav.Link>
                 </Nav>
            </Navbar.Collapse>
-           
         </Navbar>
     )
 }
