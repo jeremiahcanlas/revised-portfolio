@@ -83,7 +83,12 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 0 4rem;
+  padding: 0 1rem;
+}
+@media (min-width: 688px) {
+  .modal .modal-body .modalLinks {
+    padding: 0 4rem;
+  }
 }
 .modal .modal-body .modalLinks .modal-link a {
   background-color: #0C120C;

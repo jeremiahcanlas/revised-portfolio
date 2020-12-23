@@ -140,7 +140,11 @@ $screen-lg-min: 992px;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
-                padding:0 4rem;
+                padding:0 1rem;
+
+                @include sm {
+                    padding: 0 4rem;
+                }
 
                 .modal-link{
 
