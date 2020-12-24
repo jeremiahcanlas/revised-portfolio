@@ -3,7 +3,7 @@ import {Button} from 'react-bootstrap'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub,faLinkedinIn,faCodepen } from '@fortawesome/free-brands-svg-icons'
 import {faEnvelope} from "@fortawesome/free-regular-svg-icons";
-import {faHandshake,faEnvelopeSquare} from "@fortawesome/free-solid-svg-icons";
+import {faHandshake,faEnvelopeSquare, faDownload} from "@fortawesome/free-solid-svg-icons";
 
 
 
@@ -42,8 +42,14 @@ function Contact() {
               </div>
             </div>
             <div className='contact-footer'>
+              <div className='contact-footer-item'>
                 <FontAwesomeIcon icon={faEnvelopeSquare}/>
                 <a href='mailto:info@jeremiahcanlas.com' rel="noreferrer" target='_blank'>info@jeremiahcanlas.com</a>
+              </div>
+              <div className='contact-footer-item resume'>
+                  <FontAwesomeIcon icon={faDownload}/>
+                  <a href='resources/Resume.pdf' download>Download My Resume</a>
+              </div>
             </div>
         </div>
     )

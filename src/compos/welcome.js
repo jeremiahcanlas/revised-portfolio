@@ -16,6 +16,7 @@ function Welcome() {
         }
     }
 
+
     useEffect(() => { //will change the icon on dom mount after 2s
         setTimeout(() => {
             setIcon(faCode)
@@ -30,7 +31,7 @@ function Welcome() {
 
     
     return (
-        <div className='intro'>
+        <div className='intro' >
             <div className='container'>
                 <h1>Hi, I'm Jeremiah Canlas</h1>
                 <FontAwesomeIcon icon={icon} onMouseEnter={changeIcon} onMouseLeave={changeIcon} size='2x' className='mb-0'/>

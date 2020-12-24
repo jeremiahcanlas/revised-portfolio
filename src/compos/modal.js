@@ -1,12 +1,12 @@
 import React,{useState} from 'react'
 import {Modal,Button} from 'react-bootstrap'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faAddressCard,faMugHot,faArrowCircleLeft,faEnvelopeSquare} from "@fortawesome/free-solid-svg-icons";
+import {faAddressCard,faMugHot,faArrowCircleLeft,faEnvelopeSquare,faDownload} from "@fortawesome/free-solid-svg-icons";
 import { faGithubSquare,faLinkedin,faCodepen } from '@fortawesome/free-brands-svg-icons'
 
 function Modalcomponent({expanded}) {
     const [show, setShow] = useState(false);
-
+    
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
  
@@ -51,6 +51,10 @@ function Modalcomponent({expanded}) {
                 </Button>
                 <p>Email me</p>
               </div>
+            </div>
+            <div className='modal-resume'>
+                  <FontAwesomeIcon icon={faDownload}/>
+                  <a href='resources/Resume.pdf' download>Download My Resume</a>
             </div>
           </Modal.Body>
           <Modal.Footer>

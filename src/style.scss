@@ -185,6 +185,27 @@ $screen-lg-min: 992px;
 
             }
 
+            .modal-resume {
+                margin-top: 1rem;
+                
+
+                svg {
+                    color: $yellow;
+                }
+
+                a {
+                    color:$yellow;
+                    text-decoration: none;
+                    font-weight: 500;
+                    margin-left: 0.5rem;
+                }
+                
+                a:hover {
+                    color: $main-color;
+                }
+
+
+            }
             
         }
     
@@ -310,26 +331,45 @@ $screen-lg-min: 992px;
 
     .contact-footer {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
 
-        svg {
-            font-size:1.5rem;
-            margin-right: 0.5rem;
-            background-color: $nav-color;
-            color: $main-color;
+        .contact-footer-item {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-bottom: 2rem;
+
+            svg {
+                font-size:1.5rem;
+                margin-right: 0.5rem;
+                background-color: $nav-color;
+                color: $main-color;
+            }
+    
+            a {
+                color: $nav-color;
+                font-weight: 600;
+                text-decoration: none;
+    
+            }
+    
+            a:hover {
+                color: $yellow;
+            }
+
+ 
         }
 
-        a {
-            color: $nav-color;
-            font-weight: 600;
-            text-decoration: none;
+        .resume {
 
-        }
-
-        a:hover {
-            color: $yellow;
+            svg {
+                background-color: $main-color;
+                color: $nav-color;
+                font-size: 1.2rem;
+            }
         }
     }
+
 }
 //footer section
 footer {

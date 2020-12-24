@@ -115,6 +115,21 @@
   color: #FFB20F;
   font-weight: 500;
 }
+.modal .modal-body .modal-resume {
+  margin-top: 1rem;
+}
+.modal .modal-body .modal-resume svg {
+  color: #FFB20F;
+}
+.modal .modal-body .modal-resume a {
+  color: #FFB20F;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 0.5rem;
+}
+.modal .modal-body .modal-resume a:hover {
+  color: #C7D6D5;
+}
 .modal .modal-footer {
   padding: 0.2rem;
   border: none;
@@ -208,21 +223,32 @@
 }
 .contact-section .contact-footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
-.contact-section .contact-footer svg {
+.contact-section .contact-footer .contact-footer-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.contact-section .contact-footer .contact-footer-item svg {
   font-size: 1.5rem;
   margin-right: 0.5rem;
   background-color: #0C120C;
   color: #C7D6D5;
 }
-.contact-section .contact-footer a {
+.contact-section .contact-footer .contact-footer-item a {
   color: #0C120C;
   font-weight: 600;
   text-decoration: none;
 }
-.contact-section .contact-footer a:hover {
+.contact-section .contact-footer .contact-footer-item a:hover {
   color: #FFB20F;
+}
+.contact-section .contact-footer .resume svg {
+  background-color: #C7D6D5;
+  color: #0C120C;
+  font-size: 1.2rem;
 }
 
 footer {
