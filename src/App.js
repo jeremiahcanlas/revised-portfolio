@@ -7,7 +7,7 @@ import Footer from './compos/footer'
 
 function App() {
   return (
-    <div className="App d-flex flex-column vh-100">
+    <div className="App d-flex flex-column ">
         <Navigation/>
         <Welcome/>
         <Projects/>

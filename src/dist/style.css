@@ -1,3 +1,9 @@
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+  /* make scrollbar transparent */
+}
+
 .navbar {
   background-color: #0C120C !important;
   padding-bottom: 0.9rem;
@@ -128,20 +134,95 @@
   color: #FFB20F;
 }
 
-.intro {
+.intro, .contact-section {
   text-align: center;
   background-color: #C7D6D5;
-  height: 100vh;
+  height: 100vh !important;
   display: flex;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
 }
-.intro h1 {
+.intro h1, .contact-section h1 {
   font-size: 2rem;
 }
-.intro p {
+.intro p, .contact-section p {
   font-weight: 500;
   color: #0C120C;
+}
+
+.project-section {
+  background-color: #0C120C;
+  color: #C7D6D5;
+  height: 100vh;
+}
+
+.contact-section {
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-section .contact-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.contact-section .contact-header h1 {
+  margin: 0;
+}
+.contact-section .contact-header h1 span {
+  color: #FFB20F;
+}
+.contact-section .contact-header svg {
+  font-size: 2rem;
+  margin: 0.2rem 0 0 0.5rem;
+}
+.contact-section .contactLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.contact-section .contactLinks .contact-link {
+  padding: 1rem 0.5rem;
+}
+@media (min-width: 688px) {
+  .contact-section .contactLinks .contact-link {
+    padding: 1rem 1rem;
+  }
+}
+.contact-section .contactLinks .contact-link a {
+  background-color: #C7D6D5;
+  border: none;
+  color: #0C120C;
+}
+.contact-section .contactLinks .contact-link a svg {
+  font-size: 2.5rem;
+}
+.contact-section .contactLinks .contact-link a:hover {
+  color: #FFB20F;
+}
+.contact-section .contactLinks .contact-link a:active, .contact-section .contactLinks .contact-link a:focus {
+  outline: none;
+  box-shadow: none;
+}
+.contact-section .contact-footer {
+  display: flex;
+  flex-direction: row;
+}
+.contact-section .contact-footer svg {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+  background-color: #0C120C;
+  color: #C7D6D5;
+}
+.contact-section .contact-footer a {
+  color: #0C120C;
+  font-weight: 600;
+  text-decoration: none;
+}
+.contact-section .contact-footer a:hover {
+  color: #FFB20F;
 }
 
 footer {

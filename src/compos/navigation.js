@@ -31,10 +31,10 @@ function Navigation() {
             <Modalcomponent expanded={expanded}/>
            <Navbar.Collapse id='basic-navbar-nav' className='navlist'>
                 <Nav className='mr-auto' >
-                    <Nav.Link onClick={hideNav}  href='#'>
+                    <Nav.Link onClick={hideNav}  href='#projects'>
                         Projects
                     </Nav.Link>
-                    <Nav.Link onClick={hideNav} href='#'>
+                    <Nav.Link onClick={hideNav} href='#contact'>
                         Contact
                     </Nav.Link>
                 </Nav>

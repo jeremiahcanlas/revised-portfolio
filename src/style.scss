@@ -29,7 +29,14 @@ $screen-lg-min: 992px;
     }
  }
 
+ ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
 
+
+
+//navigation section
 .navbar {
     background-color: $nav-color!important;
     padding-bottom: 0.9rem;
@@ -93,6 +100,7 @@ $screen-lg-min: 992px;
     }
 
     .modalBtn:hover {
+
         svg{
             color: $yellow!important;
 
@@ -208,14 +216,14 @@ $screen-lg-min: 992px;
 }
 
 
-
+// welcome section
 .intro {
     text-align: center;
     background-color: $main-color;
-    height: 100vh;
+    height: 100vh!important;
     display: flex;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
     
 
     h1{
@@ -229,6 +237,101 @@ $screen-lg-min: 992px;
 
 }
 
+//projects section
+.project-section {
+    background-color:$nav-color;
+    color: $main-color;
+    height: 100vh;
+}
+
+//contact section
+.contact-section {
+    @extend .intro;
+    flex-direction: column;
+    justify-content: center;
+
+    .contact-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+
+        h1 {
+            margin: 0;
+
+            span {
+                color: $yellow;
+            }
+
+        }
+
+        svg {
+            font-size: 2rem;
+            margin:0.2rem 0 0 0.5rem;
+        }
+    }
+
+    .contactLinks {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+
+        .contact-link {
+
+            padding: 1rem 0.5rem;
+
+            @include sm {
+                padding: 1rem 1rem;  
+            }
+
+            a {
+                background-color: $main-color;
+                border: none;
+                color: $nav-color;
+
+                svg {
+                    font-size: 2.5rem;
+                }
+            }
+
+            a:hover {
+                color: $yellow;
+            }
+
+            a:active,a:focus {
+                outline: none;
+                box-shadow: none;
+            }
+            
+        }
+    }
+
+    .contact-footer {
+        display: flex;
+        flex-direction: row;
+
+        svg {
+            font-size:1.5rem;
+            margin-right: 0.5rem;
+            background-color: $nav-color;
+            color: $main-color;
+        }
+
+        a {
+            color: $nav-color;
+            font-weight: 600;
+            text-decoration: none;
+
+        }
+
+        a:hover {
+            color: $yellow;
+        }
+    }
+}
+//footer section
 footer {
     margin-top: auto; //this keeps the footer at the bottom
     background-color: #0C120C;

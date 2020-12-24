@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import {Modal,Button} from 'react-bootstrap'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faAddressCard,faMugHot,faArrowCircleLeft,faEnvelope} from "@fortawesome/free-solid-svg-icons";
+import {faAddressCard,faMugHot,faArrowCircleLeft,faEnvelopeSquare} from "@fortawesome/free-solid-svg-icons";
 import { faGithubSquare,faLinkedin,faCodepen } from '@fortawesome/free-brands-svg-icons'
 
 function Modalcomponent({expanded}) {
@@ -47,7 +47,7 @@ function Modalcomponent({expanded}) {
               </div>
               <div className='modal-link'>
                 <Button href='mailto:info@jeremiahcanlas.com' target='_blank'>
-                  <FontAwesomeIcon  icon={faEnvelope}/>
+                  <FontAwesomeIcon  icon={faEnvelopeSquare}/>
                 </Button>
                 <p>Email me</p>
               </div>
