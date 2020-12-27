@@ -167,8 +167,30 @@
 
 .project-section {
   background-color: #0C120C;
+  display: flex;
+  flex-direction: column;
   color: #C7D6D5;
   height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.project-section .project-header h1 {
+  margin: 2rem 0;
+}
+@media (min-width: 768px) {
+  .project-section .project-header h1 {
+    margin: 1rem 0;
+  }
+}
+.project-section .project-body img {
+  max-height: 90vh;
+  max-width: 100%;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  .project-section .project-body img {
+    max-height: 80vh;
+  }
 }
 
 .contact-section {
@@ -232,10 +254,10 @@
   margin-bottom: 2rem;
 }
 .contact-section .contact-footer .contact-footer-item svg {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin-right: 0.5rem;
-  background-color: #0C120C;
-  color: #C7D6D5;
+  background-color: #C7D6D5;
+  color: #0C120C;
 }
 .contact-section .contact-footer .contact-footer-item a {
   color: #0C120C;

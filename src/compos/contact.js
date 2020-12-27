@@ -48,7 +48,7 @@ function Contact() {
               </div>
               <div className='contact-footer-item resume'>
                   <FontAwesomeIcon icon={faDownload}/>
-                  <a href='resources/Resume.pdf' download>Download My Resume</a>
+                  <a href='resources/Resume.pdf' target='_blank' download>Download My Resume</a>
               </div>
             </div>
         </div>

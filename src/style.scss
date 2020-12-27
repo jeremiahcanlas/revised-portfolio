@@ -261,8 +261,44 @@ $screen-lg-min: 992px;
 //projects section
 .project-section {
     background-color:$nav-color;
+    display: flex;
+    flex-direction: column;
     color: $main-color;
     height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    .project-header{
+
+        h1{
+            margin: 2rem 0;
+
+            @include md {
+                margin: 1rem 0;
+            }
+        }
+       
+        
+
+       
+
+    }
+
+    .project-body{
+
+        img{
+            max-height: 90vh;
+            max-width: 100%;
+            margin:auto;
+
+            @include md {
+                max-height: 80vh;
+            }
+        }
+
+    }
+
+
 }
 
 //contact section
@@ -340,10 +376,10 @@ $screen-lg-min: 992px;
             margin-bottom: 2rem;
 
             svg {
-                font-size:1.5rem;
+                font-size:1.4rem;
                 margin-right: 0.5rem;
-                background-color: $nav-color;
-                color: $main-color;
+                background-color: $main-color;
+                color: $nav-color;
             }
     
             a {
