@@ -21,6 +21,17 @@
   width: 30px !important;
   height: 30px !important;
 }
+.navbar .navbar-brand {
+  margin: 0;
+  padding: 0;
+}
+.navbar .navbar-brand img {
+  height: 50px;
+  width: 120px;
+}
+.navbar .navbar-toggler {
+  margin: 0;
+}
 .navbar .navbar-toggler:focus,
 .navbar .navbar-toggler:active,
 .navbar .navbar-toggler-icon:focus {
@@ -157,12 +168,19 @@
   align-items: center;
   justify-content: center;
 }
-.intro h1, .contact-section h1 {
-  font-size: 2rem;
-}
 .intro p, .contact-section p {
   font-weight: 500;
   color: #0C120C;
+}
+.intro .intro-header, .contact-section .intro-header {
+  margin-bottom: 1rem;
+}
+.intro .intro-header img, .contact-section .intro-header img {
+  height: 100px;
+  width: 280px;
+}
+.intro .intro-header h1, .contact-section .intro-header h1 {
+  font-size: 2rem;
 }
 
 .project-section {
@@ -182,14 +200,12 @@
     margin: 1rem 0;
   }
 }
-.project-section .project-body img {
-  max-height: 90vh;
-  max-width: 100%;
-  margin: auto;
+.project-section .project-body {
+  max-width: 100vw;
 }
 @media (min-width: 768px) {
   .project-section .project-body img {
-    max-height: 80vh;
+    max-height: 70vh;
   }
 }
 
@@ -276,9 +292,17 @@
 footer {
   margin-top: auto;
   background-color: #0C120C;
+  display: flex;
+  flex-direction: row;
+}
+footer img {
+  margin: 0.5rem 0.5rem;
+  height: 40px;
+  width: 80px;
 }
 footer p {
   margin: 0.5rem 0;
   color: #C7D6D5;
   font-weight: 500;
+  display: inline;
 }

@@ -3,6 +3,7 @@ import {Modal,Button} from 'react-bootstrap'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faAddressCard,faMugHot,faArrowCircleLeft,faEnvelopeSquare,faDownload} from "@fortawesome/free-solid-svg-icons";
 import { faGithubSquare,faLinkedin,faCodepen } from '@fortawesome/free-brands-svg-icons'
+import resume from '../resource/Resume.pdf'
 
 function Modalcomponent({expanded}) {
     const [show, setShow] = useState(false);
@@ -54,7 +55,7 @@ function Modalcomponent({expanded}) {
             </div>
             <div className='modal-resume'>
                   <FontAwesomeIcon icon={faDownload}/>
-                  <a href='resources/Resume.pdf' download>Download My Resume</a>
+                  <a href={resume} download>Download My Resume</a>
             </div>
           </Modal.Body>
           <Modal.Footer>

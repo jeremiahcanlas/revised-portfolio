@@ -1,6 +1,7 @@
 import React, {useState, useEffect}from 'react'
 import { faLaptopCode,faCode } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import logo from '../resource/jc.png'
 
 
 
@@ -31,11 +32,19 @@ function Welcome() {
 
     
     return (
-        <div className='intro' >
+        <div className='intro' id='jeremiah'>
             <div className='container'>
-                <h1>Hi, I'm Jeremiah Canlas</h1>
+                <div className='intro-header'>
+                <h1>Hi, I'm</h1>
+                <img
+                src={logo}
+                alt='intro logo'
+                />
+                </div>
+                <div className='intro-footer'>
                 <FontAwesomeIcon icon={icon} onMouseEnter={changeIcon} onMouseLeave={changeIcon} size='2x' className='mb-0'/>
                 <p>a front-end web developer</p>
+                </div>
             </div>
         </div>
 

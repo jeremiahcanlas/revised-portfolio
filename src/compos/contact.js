@@ -4,11 +4,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub,faLinkedinIn,faCodepen } from '@fortawesome/free-brands-svg-icons'
 import {faEnvelope} from "@fortawesome/free-regular-svg-icons";
 import {faHandshake,faEnvelopeSquare, faDownload} from "@fortawesome/free-solid-svg-icons";
+import resume from '../resource/Resume.pdf'
 
 
 
 
 function Contact() {
+  
     return (
         <div className='contact-section' id='contact'>
             <div className='contact-header'>
@@ -48,7 +50,7 @@ function Contact() {
               </div>
               <div className='contact-footer-item resume'>
                   <FontAwesomeIcon icon={faDownload}/>
-                  <a href='resources/Resume.pdf' target='_blank' download>Download My Resume</a>
+                  <a href={resume} target='_blank' rel='noreferrer' download>Download My Resume</a>
               </div>
             </div>
         </div>
