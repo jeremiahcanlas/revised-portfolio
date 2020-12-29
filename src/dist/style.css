@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap");
 ::-webkit-scrollbar {
   width: 0px;
   background: transparent;
@@ -7,6 +8,8 @@
 .navbar {
   background-color: #0C120C !important;
   padding-bottom: 0.9rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
 }
 @media (min-width: 688px) {
   .navbar {
@@ -71,10 +74,14 @@
   box-shadow: none;
 }
 
+.modal {
+  font-family: "Raleway", sans-serif;
+}
 .modal .modal-header {
   justify-content: center !important;
   border: none;
   background-color: #0C120C;
+  font-weight: 400;
 }
 .modal .modal-header .modal-title {
   font-size: 1.2rem;
@@ -95,6 +102,7 @@
   background-color: #0C120C;
   color: #C7D6D5;
   padding-bottom: 0;
+  font-weight: 200;
 }
 .modal .modal-body .modalLinks {
   display: flex;
@@ -135,7 +143,7 @@
 .modal .modal-body .modal-resume a {
   color: #FFB20F;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 300;
   margin-left: 0.5rem;
 }
 .modal .modal-body .modal-resume a:hover {
@@ -145,11 +153,11 @@
   padding: 0.2rem;
   border: none;
   background-color: #0C120C;
+  font-weight: 400;
 }
 .modal .modal-footer button {
   background-color: #C7D6D5;
   color: #0C120C;
-  font-weight: 500;
 }
 .modal .modal-footer button:hover {
   background-color: #0C120C;
@@ -168,10 +176,6 @@
   align-items: center;
   justify-content: center;
 }
-.intro p, .contact-section p {
-  font-weight: 500;
-  color: #0C120C;
-}
 .intro .intro-header, .contact-section .intro-header {
   margin-bottom: 1rem;
 }
@@ -181,19 +185,34 @@
 }
 .intro .intro-header h1, .contact-section .intro-header h1 {
   font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
+  color: #0C120C;
+}
+.intro .intro-footer svg, .contact-section .intro-footer svg {
+  margin-bottom: 0.5rem !important;
+  color: #0C120C;
+}
+.intro .intro-footer p, .contact-section .intro-footer p {
+  font-weight: 400;
+  color: #0C120C;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
 }
 
 .project-section {
   background-color: #0C120C;
   display: flex;
   flex-direction: column;
-  color: #C7D6D5;
   height: 100vh;
   justify-content: center;
   align-items: center;
+  font-family: "Raleway", sans-serif;
+  color: #C7D6D5 !important;
 }
 .project-section .project-header h1 {
   margin: 2rem 0;
+  font-weight: 200;
 }
 @media (min-width: 768px) {
   .project-section .project-header h1 {
@@ -201,17 +220,85 @@
   }
 }
 .project-section .project-body {
-  max-width: 100vw;
+  width: 100vw;
+  margin-bottom: 3rem;
+}
+.project-section .project-body h3 {
+  font-weight: 200;
+  color: #C7D6D5;
+}
+.project-section .project-body span {
+  color: #C7D6D5;
+}
+.project-section .project-body .project-btn {
+  justify-content: center;
+}
+.project-section .project-body .project-btn a {
+  background-color: transparent;
+  border: none;
+}
+.project-section .project-body .project-btn a svg {
+  font-size: 2rem;
+  color: #C7D6D5;
+}
+.project-section .project-body .project-btn a svg:hover {
+  color: #FFB20F;
+}
+.project-section .project-body .project-btn a:focus, .project-section .project-body .project-btn a:active {
+  outline: none;
+  box-shadow: none;
+}
+.project-section .project-body .proj {
+  width: 100vw;
+  height: 70vh;
+  background-color: #0C120C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project-section .project-body .proj img:first-child {
+  margin: 0 auto;
+  max-height: 70vh;
+  width: 70vw;
 }
 @media (min-width: 768px) {
-  .project-section .project-body img {
-    max-height: 70vh;
+  .project-section .project-body .proj img:first-child {
+    width: 50vw;
+  }
+}
+.project-section .project-body .proj .p2 {
+  width: 50vw !important;
+  height: 200px;
+  padding-bottom: 3rem;
+}
+@media (min-width: 688px) {
+  .project-section .project-body .proj .p2 {
+    width: 20vw !important;
+  }
+}
+.project-section .project-body .proj .more {
+  width: 50vw !important;
+  height: 25vw;
+}
+@media (min-width: 688px) {
+  .project-section .project-body .proj .more {
+    width: 20vw !important;
+    height: 10vw;
+  }
+}
+.project-section .project-body .description {
+  margin-bottom: 1rem;
+}
+@media (min-width: 688px) {
+  .project-section .project-body .description {
+    margin-bottom: 2rem;
   }
 }
 
 .contact-section {
   flex-direction: column;
   justify-content: center;
+  font-family: "Raleway", sans-serif;
 }
 .contact-section .contact-header {
   display: flex;
@@ -219,9 +306,16 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 1rem;
+  font-weight: 400;
 }
 .contact-section .contact-header h1 {
   margin: 0;
+  font-size: 2rem;
+}
+@media (min-width: 768px) {
+  .contact-section .contact-header h1 {
+    font-size: 3rem;
+  }
 }
 .contact-section .contact-header h1 span {
   color: #FFB20F;
@@ -237,7 +331,7 @@
   margin-bottom: 2rem;
 }
 .contact-section .contactLinks .contact-link {
-  padding: 1rem 0.5rem;
+  padding: 1rem 0;
 }
 @media (min-width: 688px) {
   .contact-section .contactLinks .contact-link {
@@ -262,6 +356,7 @@
 .contact-section .contact-footer {
   display: flex;
   flex-direction: column;
+  font-weight: 200;
 }
 .contact-section .contact-footer .contact-footer-item {
   display: flex;
@@ -277,7 +372,6 @@
 }
 .contact-section .contact-footer .contact-footer-item a {
   color: #0C120C;
-  font-weight: 600;
   text-decoration: none;
 }
 .contact-section .contact-footer .contact-footer-item a:hover {
@@ -294,6 +388,8 @@ footer {
   background-color: #0C120C;
   display: flex;
   flex-direction: row;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
 }
 footer img {
   margin: 0.5rem 0.5rem;

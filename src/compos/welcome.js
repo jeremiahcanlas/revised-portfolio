@@ -43,7 +43,7 @@ function Welcome() {
                 </div>
                 <div className='intro-footer'>
                 <FontAwesomeIcon icon={icon} onMouseEnter={changeIcon} onMouseLeave={changeIcon} size='2x' className='mb-0'/>
-                <p>a front-end web developer</p>
+                <p>a front end web developer</p>
                 </div>
             </div>
         </div>

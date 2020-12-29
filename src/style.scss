@@ -1,6 +1,11 @@
+//Color Theme
 $main-color:#C7D6D5;
-$nav-color: #0C120C;
+$sub-color: #0C120C;
 $yellow: #FFB20F;
+
+//google fonts
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap');
+$main-font:'Raleway', sans-serif;
 
 //breakpoints
 $screen-sm-min: 688px;
@@ -16,20 +21,21 @@ $screen-lg-min: 992px;
  }
  
  // Medium devices
- @mixin md {
+@mixin md {
     @media (min-width: #{$screen-md-min}) {
         @content;
     }
  }
  
  // Large devices
- @mixin lg {
+@mixin lg {
     @media (min-width: #{$screen-lg-min}) {
         @content;
     }
  }
 
- ::-webkit-scrollbar {
+
+::-webkit-scrollbar {
     width: 0px;
     background: transparent; /* make scrollbar transparent */
 }
@@ -38,8 +44,10 @@ $screen-lg-min: 992px;
 
 //navigation section
 .navbar {
-    background-color: $nav-color!important;
+    background-color: $sub-color!important;
     padding-bottom: 0.9rem;
+    font-family: $main-font;
+    font-weight: 400;
 
         @include sm {
             padding-bottom: 0.5rem;
@@ -103,7 +111,7 @@ $screen-lg-min: 992px;
 
         margin-right: 1rem;
         padding: 0;
-        background-color: $nav-color!important;
+        background-color: $sub-color!important;
         border: none;
 
 
@@ -129,12 +137,14 @@ $screen-lg-min: 992px;
 }
 
 .modal {
+    font-family: $main-font;
 
    
         .modal-header{
             justify-content: center!important;
             border:none;
-            background-color: $nav-color;
+            background-color: $sub-color;
+            font-weight: 400;
 
             .modal-title {
                 font-size:1.2rem;
@@ -154,9 +164,10 @@ $screen-lg-min: 992px;
     
         .modal-body {
             text-align: center;
-            background-color: $nav-color;
+            background-color: $sub-color;
             color: $main-color;
             padding-bottom: 0;
+            font-weight: 200;
 
             .modalLinks {
                 display: flex;
@@ -171,7 +182,7 @@ $screen-lg-min: 992px;
                 .modal-link{
 
                     a{
-                        background-color: $nav-color;
+                        background-color: $sub-color;
                         border: none;
                         
                         svg{
@@ -210,7 +221,7 @@ $screen-lg-min: 992px;
                 a {
                     color:$yellow;
                     text-decoration: none;
-                    font-weight: 500;
+                    font-weight: 300;
                     margin-left: 0.5rem;
                 }
                 
@@ -226,17 +237,18 @@ $screen-lg-min: 992px;
         .modal-footer {
             padding:0.2rem;
             border: none;
-            background-color: $nav-color;
+            background-color: $sub-color;
+            font-weight: 400;
 
             button {
                 background-color: $main-color;
-                color: $nav-color;
-                font-weight: 500;
+                color: $sub-color;
+                
 
             }
 
             button:hover {
-                background-color: $nav-color;
+                background-color: $sub-color;
                 color: $main-color;
                 border:1px solid $yellow;
 
@@ -261,10 +273,7 @@ $screen-lg-min: 992px;
     justify-content: center;
     
 
-    p{
-        font-weight: 500;
-        color: $nav-color;
-    }
+  
 
     .intro-header {
         margin-bottom: 1rem;
@@ -276,25 +285,47 @@ $screen-lg-min: 992px;
 
         h1{
             font-size: 2rem;
+            font-family: $main-font;
+            font-weight: 200;
+            color: $sub-color;
+
         }
+    }
+
+    .intro-footer {
+
+        svg{
+            margin-bottom: 0.5rem!important;
+            color: $sub-color;
+        }
+
+        p{
+            font-weight: 400;
+            color: $sub-color;
+            font-family: $main-font;
+            font-size: 1.2rem;
+        }    
     }
 
 }
 
 //projects section
 .project-section {
-    background-color:$nav-color;
+    background-color:$sub-color;
     display: flex;
     flex-direction: column;
-    color: $main-color;
     height: 100vh;
     justify-content: center;
     align-items: center;
+    font-family: $main-font;
+    color: $main-color!important;
 
     .project-header{
+        
 
         h1{
             margin: 2rem 0;
+            font-weight: 200;
 
             @include md {
                 margin: 1rem 0;
@@ -304,20 +335,92 @@ $screen-lg-min: 992px;
 
     .project-body{
 
-        max-width: 100vw;
+      width: 100vw;
+      margin-bottom: 3rem;
 
-        img{
-            
+      h3{
+          font-weight: 200;
+          color: $main-color;
+      }
 
-            @include md {
-                max-height:70vh;
+      span {
+          color: $main-color;
+      }
+    
+     
+
+        .project-btn {
+            justify-content: center;
+
+            a {
+                background-color: transparent;
+                border: none;
+
+                svg {
+                    font-size: 2rem;
+                    color: $main-color;
+                }
+
+                svg:hover {
+                    color: $yellow;
+                }
             }
-            
+
+            a:focus,a:active {
+                outline: none;
+                box-shadow: none;
+            }
         }
 
+       .proj{
+           width:100vw;
+           height:70vh;
+           background-color: $sub-color;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+
+       
+           
+            img:first-child{
+                margin: 0 auto;
+                max-height: 70vh;
+                width: 70vw;
+
+                @include md {
+                    width:50vw;
+                }    
+            }
+
+            .p2 {
+                width:50vw!important;
+                height: 200px;
+                padding-bottom: 3rem;
+
+                @include sm {
+                    width:20vw!important;
+                }
+            }
+
+            .more {
+                width:50vw!important;
+                height: 25vw;
+
+                @include sm {
+                    width:20vw!important;
+                    height: 10vw;
+                }
+            }
+       }
+
+       .description {
+           margin-bottom: 1rem;
+
+           @include sm {
+            margin-bottom: 2rem;
+           }
+       }
     }
-
-
 }
 
 //contact section
@@ -325,6 +428,7 @@ $screen-lg-min: 992px;
     @extend .intro;
     flex-direction: column;
     justify-content: center;
+    font-family: $main-font;
 
     .contact-header {
         display: flex;
@@ -332,9 +436,15 @@ $screen-lg-min: 992px;
         justify-content: center;
         align-items: center;
         margin-bottom: 1rem;
+        font-weight: 400;
 
         h1 {
             margin: 0;
+            font-size:2rem;
+
+            @include md {
+                font-size: 3rem;
+            }
 
             span {
                 color: $yellow;
@@ -356,7 +466,7 @@ $screen-lg-min: 992px;
 
         .contact-link {
 
-            padding: 1rem 0.5rem;
+            padding: 1rem 0;
 
             @include sm {
                 padding: 1rem 1rem;  
@@ -365,7 +475,7 @@ $screen-lg-min: 992px;
             a {
                 background-color: $main-color;
                 border: none;
-                color: $nav-color;
+                color: $sub-color;
 
                 svg {
                     font-size: 2.5rem;
@@ -387,6 +497,7 @@ $screen-lg-min: 992px;
     .contact-footer {
         display: flex;
         flex-direction: column;
+        font-weight: 200;
 
         .contact-footer-item {
             display: flex;
@@ -398,12 +509,11 @@ $screen-lg-min: 992px;
                 font-size:1.4rem;
                 margin-right: 0.5rem;
                 background-color: $main-color;
-                color: $nav-color;
+                color: $sub-color;
             }
     
             a {
-                color: $nav-color;
-                font-weight: 600;
+                color: $sub-color;
                 text-decoration: none;
     
             }
@@ -419,7 +529,7 @@ $screen-lg-min: 992px;
 
             svg {
                 background-color: $main-color;
-                color: $nav-color;
+                color: $sub-color;
                 font-size: 1.2rem;
             }
         }
@@ -432,6 +542,8 @@ footer {
     background-color: #0C120C;
     display: flex;
     flex-direction: row;
+    font-family: $main-font;
+    font-weight: 400;
 
     img {
         margin: 0.5rem 0.5rem;
