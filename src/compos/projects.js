@@ -99,7 +99,7 @@ function Projects() {
                     </div>
                     <Carousel.Caption className={`description fade-in-section ${isVisible ? 'is-visible' : ''}`}
                 ref={domRef}>
-                        <h3>More Projects</h3>
+                        <h3>View <span>More</span> Of My Work</h3>
                         <div className='row project-btn'>
                             <Button href='https://github.com/jeremiahcanlas' target='_blank' >
                                 <FontAwesomeIcon icon={faGithub}/>

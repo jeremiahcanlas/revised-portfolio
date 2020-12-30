@@ -71,7 +71,7 @@ body {
 
         img {
             height: 50px;
-            width: 120px;
+            width: 110px;
         }
     }
 
@@ -396,11 +396,11 @@ body {
 
             .p2 {
                 width:40vw!important;
-                height: 180px;
+                height: 170px;
                 padding-bottom: 3rem;
 
                 @include sm {
-                    width:20vw!important;
+                    width:15vw!important;
                 }
             }
 
