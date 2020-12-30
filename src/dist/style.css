@@ -5,6 +5,10 @@
   /* make scrollbar transparent */
 }
 
+body {
+  background-color: #C7D6D5 !important;
+}
+
 .navbar {
   background-color: #0C120C !important;
   padding-bottom: 0.9rem;
@@ -267,8 +271,8 @@
   }
 }
 .project-section .project-body .proj .p2 {
-  width: 50vw !important;
-  height: 200px;
+  width: 40vw !important;
+  height: 180px;
   padding-bottom: 3rem;
 }
 @media (min-width: 688px) {
@@ -401,4 +405,18 @@ footer p {
   color: #C7D6D5;
   font-weight: 500;
   display: inline;
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(10vh);
+  visibility: hidden;
+  transition: opacity 1200ms ease-out, transform 1500ms ease-out;
+  will-change: opacity, visibility;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
 }

@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, {useEffect} from 'react'
 import Navigation from './compos/navigation'
 import Welcome from './compos/welcome'
 import Projects from './compos/projects'
@@ -7,9 +7,9 @@ import Footer from './compos/footer'
 import $ from 'jquery'
 
 
-class App extends Component {
+function App(){
 
-  smoothScroll = () => { //smooth scroll using jquery
+  const smoothScroll = () => { //smooth scroll using jquery
     $('.nav-link').click(function( e ){  
       e.preventDefault();
       var targetId = $(this).attr("href");
@@ -19,16 +19,21 @@ class App extends Component {
 
   }
 
-  componentDidMount(){ //make sure it mounts on the DOM
-    this.smoothScroll()
+  const welcomeFade = () => { //intro fade in when dom loads
+    
+    $('.intro').hide().fadeIn(2000)
   }
 
+  useEffect(() => {
+    smoothScroll()
+  })
 
-
-render() {
+  useEffect(() => {
+    welcomeFade()
+  })
 
     return (
-      <div className="App d-flex flex-column"  >
+      <div className="App d-flex flex-column">
           <Navigation/>
           <Welcome/>
           <Projects/>
@@ -36,7 +41,7 @@ render() {
           <Footer/> 
       </div>
     );
-  }
+  
 
 }
 

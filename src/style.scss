@@ -40,7 +40,9 @@ $screen-lg-min: 992px;
     background: transparent; /* make scrollbar transparent */
 }
 
-
+body {
+    background-color: $main-color!important;
+}
 
 //navigation section
 .navbar {
@@ -393,8 +395,8 @@ $screen-lg-min: 992px;
             }
 
             .p2 {
-                width:50vw!important;
-                height: 200px;
+                width:40vw!important;
+                height: 180px;
                 padding-bottom: 3rem;
 
                 @include sm {
@@ -558,3 +560,17 @@ footer {
         display: inline;
     }
 }
+
+//fade in animation when on view css
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(10vh);
+    visibility: hidden;
+    transition: opacity 1200ms ease-out, transform 1500ms ease-out;
+    will-change: opacity, visibility;
+  }
+  .fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+  }
