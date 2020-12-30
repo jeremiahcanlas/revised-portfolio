@@ -45,7 +45,6 @@ function Welcome() {
     return (
         <div className='intro' id='jeremiah'>
             <div className='container'>
-                
                 <div   className={`intro-header fade-in-section ${isVisible ? 'is-visible' : ''}`}
                 ref={domRef}>
                 <h1>Hi, I'm</h1>

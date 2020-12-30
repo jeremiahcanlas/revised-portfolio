@@ -22,6 +22,7 @@ function App(){
   const welcomeFade = () => { //intro fade in when dom loads
     
     $('.intro').hide().fadeIn(2000)
+   
   }
 
   useEffect(() => {
