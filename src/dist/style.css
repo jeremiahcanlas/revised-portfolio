@@ -308,11 +308,6 @@ body {
     height: 230px !important;
   }
 }
-@media (min-width: 992px) {
-  .project-section .project-body .proj .p2 {
-    width: 10vw !important;
-  }
-}
 .project-section .project-body .proj .more {
   width: 50vw !important;
   height: 25vw;

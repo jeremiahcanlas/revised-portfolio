@@ -37,7 +37,6 @@ function Projects() {
             <div className={`project-header fade-in-section ${isVisible ? 'is-visible' : ''}`}
                 ref={domRef}>
                 <h1>Projects</h1>
-                <p>I specialize in solving complex problems with elegantly simple solutions</p>
             </div>
 
             <div className={`project-body fade-in-section ${isVisible ? 'is-visible' : ''}`}
