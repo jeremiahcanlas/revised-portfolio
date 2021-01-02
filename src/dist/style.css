@@ -233,6 +233,7 @@ body {
   margin: 0;
   padding: 0 1rem;
   font-weight: 200;
+  z-index: -1;
 }
 .project-section .project-body {
   width: 100vw;
